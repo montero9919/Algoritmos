@@ -29,7 +29,8 @@ public class Menu
                                                                   Menu Principal
                                                                   
                                                                   1. Mostrar mapa coloreado
-                                                                  2. Salir
+                                                                  2. ALGO MAS
+                                                                  3. Salir
                                                                   
                                                                   """));
             switch (menu)
@@ -38,12 +39,15 @@ public class Menu
                     JOptionPane.showMessageDialog(null, "El mapa se mostrara aca");
                     break;
                 case 2:
+                    JOptionPane.showMessageDialog(null, "algo mas");
+                    break;
+                case 3:
                     JOptionPane.showMessageDialog(null, "Salir del programa");
                     break;
                 default:
                     JOptionPane.showMessageDialog(null, "Error, ingrese la opcion nuevamente");
             }
-        }while (menu != 2);
+        }while (menu != 3);
     }
     
     public static void main (String arg [])
